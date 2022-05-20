@@ -1,0 +1,34 @@
+{
+  "name": "ggbond-ui",
+  "private": false,
+  "version": "0.0.1",
+  "main": "./dist/ggbond-ui.umd.js",
+  "module": "./dist/ggbond-ui.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/ggbond-ui.es.js",
+      "require": "./dist/ggbond-ui.umd.js"
+    }
+  },
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.15"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.3",
+    "naive-ui": "^2.29.0",
+    "typescript": "^4.5.4",
+    "unplugin-vue-components": "^0.19.5",
+    "vfonts": "^0.0.3",
+    "vite": "^2.9.9",
+    "vue-tsc": "^0.34.7"
+  }
+}
